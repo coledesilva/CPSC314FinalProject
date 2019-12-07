@@ -1,0 +1,14 @@
+html {
+  width: 100%;
+}
+
+#header {
+  padding-left: 0px;
+  padding-right: 0px;
+
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 30px;
+}
