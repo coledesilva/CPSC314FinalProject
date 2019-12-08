@@ -20,9 +20,11 @@
       crossorigin="anonymous"
     />
 
+    <script src="rickandmortyapi.js"></script>
+
     <title>Ah Jheez Rick</title>
   </head>
-  <body>
+  <body onload="randomCards()">
     <div id="header" class="container-fluid">
       <div
         class="jumbotron jumbotron-fluid"
@@ -73,11 +75,11 @@
     </nav>
 
     <div id="cardrow1" class="card-deck my-4 mx-3">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
+      <div id="homecard1" class="card">
+        <img id="homecardimg1" src="..." class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
+          <h5 id="homecardtitle1" class="card-title">Card title</h5>
+          <p id="homecardtext1" class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
@@ -91,11 +93,11 @@
         </ul>
       </div>
 
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
+      <div id="homecard2" class="card">
+        <img id="homecardimg2" rc="..." class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
+          <h5 id="homecardtitle2" class="card-title">Card title</h5>
+          <p id="homecardtext2" class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
@@ -109,11 +111,11 @@
         </ul>
       </div>
 
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
+      <div id="homecard3" class="card">
+        <img id="homecardimg3" src="..." class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
+          <h5 id="homecardtitle3" class="card-title">Card title</h5>
+          <p id="homecardtext3" lass="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
@@ -129,11 +131,11 @@
     </div>
 
       <div id="cardrow2" class="card-deck my-4 mx-3">
-        <div class="card">
-                <img src="..." class="card-img-top" alt="..." />
+        <div id="homecard4" class="card">
+                <img id="homecardimg4" src="..." class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
+                    <h5 id="homecardtitle4" class="card-title">Card title</h5>
+                    <p id="homecardtext4" class="card-text">
                     Some quick example text to build on the card title and make up the
                     bulk of the card's content.
                     </p>
@@ -146,11 +148,11 @@
                     <li class="list-group-item">Vestibulum at eros</li>
                 </ul>
                 </div>
-        <div class="card">
-            <img src="..." class="card-img-top" alt="..." />
+        <div id="homecard5" class="card">
+            <img id="homecardimg5" src="..." class="card-img-top" alt="..." />
             <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
+            <h5 id="homecardtitle5" class="card-title">Card title</h5>
+            <p id="homecardtext5" class="card-text">
                 Some quick example text to build on the card title and make up the
                 bulk of the card's content.
             </p>
@@ -164,11 +166,11 @@
             </ul>
         </div>
 
-        <div class="card">
-            <img src="..." class="card-img-top" alt="..." />
+        <div id="homecard6" class="card">
+            <img id="homecardimg6" src="..." class="card-img-top" alt="..." />
             <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
+            <h5 id="homecardtitle6" class="card-title">Card title</h5>
+            <p id="homecardtext6" class="card-text">
                 Some quick example text to build on the card title and make up the
                 bulk of the card's content.
             </p>
