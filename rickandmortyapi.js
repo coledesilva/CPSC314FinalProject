@@ -43,6 +43,12 @@ let endpoint = "https://rickandmortyapi.com/api/";
     let cardImage = "homecardimg";
     let cardTitle = "homecardtitle";
     let cardText = "homecardtext";
+    let cardItem1 = "item1homecard";
+    let cardItem2 = "item2homecard";
+    let cardItem3 = "item3homecard";
+    let cardItem4 = "item4homecard";
+    let cardItem5 = "item5homecard";
+
 
     let request = new XMLHttpRequest();
     request.open('GET', url,true);
@@ -54,10 +60,21 @@ let endpoint = "https://rickandmortyapi.com/api/";
         let image = cardImage + i;
         let title = cardTitle + i;
         let text = cardText + i;
+        let item1 = cardItem1 + i;
+        let item2 = cardItem2 + i;
+        let item3 = cardItem3 + i;
+        let item4 = cardItem4 + i;
+        let item5 = cardItem5 + i;
 
         document.getElementById(image).src = data[i-1].image;
         document.getElementById(title).innerHTML = data[i-1].name;
-        document.getElementById(text).innerHTML = data[i-1].species;
+        document.getElementById(text).innerHTML = "Character ID: " + data[i-1].id;
+        document.getElementById(item1).innerHTML = "First Appearance: Episode " + data[i-1].episode[0].substring(40,42);
+        document.getElementById(item2).innerHTML = "Origin: " + data[i-1].origin.name;
+        document.getElementById(item3).innerHTML = "Gender: " + data[i-1].gender;
+        document.getElementById(item4).innerHTML = "Species: " + data[i-1].species;
+        document.getElementById(item5).innerHTML = "Status: " + data[i-1].status;
+
 
     }
 }
