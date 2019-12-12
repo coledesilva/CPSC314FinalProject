@@ -42,6 +42,34 @@
             });
     }
 
+    function getCharacterByFilter(string){
+    let endpoint = "https://rickandmortyapi.com/api/";
+    let characterString = "character/?name=" + string;
+    let url = endpoint + characterString;
+
+    let request = new XMLHttpRequest();
+    request.open('GET', url,true);
+
+    request.onload = function(){
+    let data = JSON.parse(this.response);
+
+    for(i = 0; i< data.results.length; i++){
+    console.log("ID: " + data.results[i].id +
+    "\nName: " + data.results[i].name +
+    "\nStatus: " + data.results[i].status +
+    "\nSpecies " + data.results[i].species);
+    }
+}
+
+    request.send();
+
+    fetch(url).then(function(result) {
+    return result.json();
+    }).then(function(json) {
+    console.log(json);
+    });
+}
+
 
     function randomCards(){
         let endpoint = "https://rickandmortyapi.com/api/";
