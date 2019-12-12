@@ -53,7 +53,9 @@ setTimeout(function() {
 }, 2000);
 
 function getSpeciesData() {
-  speciesData = result.map(character => character.species);
+  for (let i = 0; i < result.length; i++) {
+    speciesData.push(result[i].species);
+  }
   console.log(speciesData);
 
   let uniqueSpecies = [...new Set(speciesData)];
@@ -74,7 +76,9 @@ function getSpeciesData() {
 }
 
 function getStatusData() {
-  statusData = result.map(character => character.status);
+  for (let i = 0; i < result.length; i++) {
+    statusData.push(result[i].status);
+  }
   console.log(statusData);
 
   let uniqueStatus = [...new Set(statusData)];
