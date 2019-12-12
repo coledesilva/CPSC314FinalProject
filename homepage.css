@@ -21,6 +21,10 @@ html {
   margin-bottom: 0px;
 }
 
+.card {
+  visibility: hidden;
+}
+
 nav {
   margin-bottom: 30px;
 }
