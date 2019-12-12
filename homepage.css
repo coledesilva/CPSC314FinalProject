@@ -21,10 +21,24 @@ html {
   margin-bottom: 0px;
 }
 
-.card {
+#homecard1 {
   visibility: hidden;
 }
-
+#homecard2 {
+  visibility: hidden;
+}
+#homecard3 {
+  visibility: hidden;
+}
+#homecard4 {
+  visibility: hidden;
+}
+#homecard5 {
+  visibility: hidden;
+}
+#homecard6 {
+  visibility: hidden;
+}
 nav {
   margin-bottom: 30px;
 }
@@ -36,4 +50,8 @@ nav {
 
 .row {
   margin-bottom: 30px;
+}
+
+.row.no-gutters {
+  margin-bottom: 0px;
 }
