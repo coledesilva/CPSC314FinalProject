@@ -1,3 +1,8 @@
+/**
+ * Gage Gutmann and Cole deSilva
+ * CPSC 314 Final Project
+ */
+
 // resource for counting unique objects in array: https://thisdavej.com/how-to-count-unique-items-in-javascript-arrays/
 let url = "https://rickandmortyapi.com/api/character";
 // /?page=24

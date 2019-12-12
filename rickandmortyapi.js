@@ -1,3 +1,8 @@
+/**
+ * Gage Gutmann and Cole deSilva
+ * CPSC 314 Final Project
+ */
+
 function getCharacters(ids){
     let endpoint = "https://rickandmortyapi.com/api/";
     let characterString = "character/" + array;
@@ -105,7 +110,7 @@ function clickSubmit(){
         request.onload = function(){
         let data = JSON.parse(this.response);
     
-            for(i = 1; i<= data.results.length; i++){
+            for(i = 1; i<= 10; i++){
                 let image = cardImage + i;
                 let title = cardTitle + i;
                 let text = cardText + i;
@@ -114,6 +119,7 @@ function clickSubmit(){
                 let item3 = cardItem3 + i;
                 let item4 = cardItem4 + i;
                 let item5 = cardItem5 + i;
+
     
                 document.getElementById(image).src = data.results[i-1].image;
                 document.getElementById(title).innerHTML = data.results[i-1].name;
@@ -123,7 +129,7 @@ function clickSubmit(){
                 document.getElementById(item3).innerHTML = "Gender: " + data.results[i-1].gender;
                 document.getElementById(item4).innerHTML = "Species: " + data.results[i-1].species;
                 document.getElementById(item5).innerHTML = "Status: " + data.results[i-1].status;
-    
+                
     
             }
         }
