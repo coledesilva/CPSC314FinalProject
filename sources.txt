@@ -1,0 +1,17 @@
+for header image: 
+https://rickandmortypod.com/
+- just cropped it
+
+for counting unique elements in javascript array: 
+https://thisdavej.com/how-to-count-unique-items-in-javascript-arrays/
+
+for d3 tutorial and massive help: 
+https://www.kdnuggets.com/2018/03/simple-bar-chart-d3.html 
+https://stackoverflow.com/questions/16265123/resize-svg-when-window-is-resized-in-d3-js
+
+for bootstrap help:
+https://getbootstrap.com/docs/4.4/getting-started/introduction/
+
+rick and morty API:
+https://rickandmortyapi.com/documentation
+
